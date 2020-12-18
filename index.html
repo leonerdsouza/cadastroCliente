@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cliente</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <div class="container-fluid content">
+    <h3 class="fundo">Cadastro de Cliente</h3>
+    <div class="card border-primary conteudo">
+    <form>
+      <div class="row formulario">
+        <label class="items">
+          Nome<span class="text-danger">
+            *
+            </span>
+        </label>
+        <div class="col-8">
+          <div class="input-group mb-2">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">   
+          </div>  
+        </div>  
+      </div>
+    </form>  
+    <form>
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+            <div class ="row">
+              <label for="exampleInputEmail1" class="items">CPF<span class="text-danger">
+                *
+              </span></label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Apenas Números">
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 mb-2">
+            <div class ="row">
+              <label for="exampleInputEmail1">Nascimento<span class="text-danger">
+                *
+              </span></label>
+              <div class="col-8">
+                <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+              </div>
+            </div>
+          </div>
+          <div class= "col-4 mb-2">
+            <div class=" row">
+              <label for="exampleInputEmail1">Sexo<span class="text-danger">
+              *
+              </span></label>
+              <div class="col-md-3 ml-5">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
+                  Feminino
+              </div>
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                Masculino
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="exampleInputEmail1" class="items">Celular<span class="text-danger">
+                *
+              </span></label>
+              <span class="input-group-text icon " id="inputGroupPrepend">
+                <i class="material-icons">&#xe551;</i>
+              </span>
+              <div class="form-check form-check-inline col-5">
+                <input type="text" class="form-control" placeholder="XX-XXXXX-XXXX">
+              </div>  
+            </div>
+          </div>
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="exampleInputEmail1" id="telefone">Telefone<span class="text-danger">
+                *
+              </span></label>
+              <span class="input-group-text icon " id="inputGroupPrepend">
+                <i class="material-icons">&#xe551;</i>
+              </span>
+              <div class="form-check form-check-inline col-5">
+                <input type="text" class="form-control" placeholder="XX-XXXXX-XXXX">
+              </div>  
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+
+      </form>
+      <form>
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="exampleInputEmail1" class="items">Email<span class="text-danger">
+                *
+              </span></label>
+              <span class="input-group-text icon " id="inputGroupPrepend">
+                <i class="material-icons">&#xe158;</i>
+              </span>
+              <div class="form-check form-check-inline col-5">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              </div>  
+            </div>
+          </div>
+        </div>
+      </form>
+      <form>
+        <div class="form-row">
+          <div class="form-check col-md-1">
+            <label for="validationCustom05">CEP<span class="text-danger">
+              *
+            </span></label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required >
+            <div class="invalid-feedback">
+              Por favor, informe um CEP válido.
+            </div>
+            <button type="button" class="btn btn-primary">Pesquisar</button>
+          </div>
+          </div>
+      </form>
+      <form>
+        <div class ="row">
+          <br> </br>
+          <div class="col-md-1"><label>Endereço</label></div>
+        
+          <div class="form-check form-check-inline col-md-2">
+            <span class="input-group-text" id="inputGroupPrepend"><label for="disabledTextInput">Cidade</label>
+              <span class="text-danger">
+                *
+              </span></span>
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="Cidade" disabled>
+          </div>
+        <div class="form-check form-check-inline col-md-2">
+          <span class="input-group-text" id="inputGroupPrepend"><label for="validationCustom04">Estado</label>
+            <span class="text-danger">
+              *
+            </span></span>
+          
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" disabled>
+        </div>
+          
+        
+        <div class="form-check form-check-inline col-md-2">
+          <span class="input-group-text" id="inputGroupPrepend"><label for="validationCustom04">Bairro</label>
+            <span class="text-danger">
+              *
+            </span></span>
+          
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Bairro" disabled>
+        </div>
+        <div class="form-check form-check-inline col-md-2">
+          <span class="input-group-text" id="inputGroupPrepend"><label for="validationCustom04">Rua</label>
+            <span class="text-danger">
+              *
+            </span></span>
+          
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Rua" disabled>
+        </div>
+        <div class="form-check form-check-inline col-md-2">
+          <span class="input-group-text" id="inputGroupPrepend"><label for="validationCustom04">Número</label>
+            <span class="text-danger">
+              *
+            </span></span>
+          
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Número" disabled>
+        </div>
+      </div>
+      </form>
+      <form>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado Civil<span class="text-danger">
+              *
+            </span></label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>Solteiro(a)</option>
+              <option>Casado(a)</option>
+              <option>Viúvo(a)</option>
+              </select>
+          </div>
+          <form class="container p-5 col-10 offset-1">
+            <div class="row d-flex align-items-center">
+              <div class="col-5 d-flex justify-content-end">
+                Filhos<span class="text-danger">
+                  *
+                </span>
+              </div>
+              <div class="col-7">
+                <div class="input-group mb-2 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" />
+                        <label class="form-check-label">Não</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" />
+                        <label class="form-check-label">Sim</label>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Quantos?" />
+                </div>
+              </div>
+            </div>
+        </div>
+      </form>
+      <form>
+        <div class = "row">
+        <div class="form-group col-md-4">
+          <label for="inputEstado">Escolaridade<span class="text-danger">
+            *
+          </span></label>
+          <select id="inputEstado" class="form-control">
+            <option selected>Escolher...</option>
+            <option>Ensino Fundamental Incompleto</option>
+            <option>Ensino Fundamental Completo</option>
+            <option>Ensino Médio Incompleto</option>
+            <option>Ensino Médio Completo</option>
+            <option>Ensino Superior Incompleto</option>
+            <option>Ensino Superior Completo</option>
+          </select>
+        </div>
+        <div class="col-md-3 formulario">
+          <label for="exampleInputEmail1">Profissão<span class="text-danger">
+            *
+          </span></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+      </form>
+      <form >
+        <div class="row d-flex align-items-left">
+          <div class="col-1 d-flex justify-content-left">
+            Encaminhamento
+            <span class="text-danger">
+              *
+            </span>
+          </div>
+          <div class="col-3">
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" />
+                    <label class="form-check-label">Não</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" />
+                    <label class="form-check-label">Sim</label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Instituição" />
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-left">
+          <div class="col-1 d-flex justify-content-left">
+            Aluno do IFSULDEMINAS?
+            <span class="text-danger">
+              *
+            </span>
+          </div>
+          <div class="col-3">
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" />
+                    <label class="form-check-label">Não</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" />
+                    <label class="form-check-label">Sim</label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Curso"/>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-left">
+          <div class="col-2 d-flex justify-content-left">
+            Como ficou sabendo do IFSULDEMINAS?
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder=""/>
+          </div>
+        </div>
+      </form>
+
+  <!-- parte 2 - Responsável -->
+
+    <br></br>
+    <h3 class="items">Responsável</h3> 
+    <form>
+      <div class="row formulario">
+        <label class="items">
+          Nome<span class="text-danger">
+            *
+            </span>
+        </label>
+        <div class="col-8">
+          <div class="input-group mb-2">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">   
+          </div>  
+        </div>   
+      </div>
+      </form>  
+      <form>
+        <div class="input-form-group row formulario">
+          <div class="col-4">
+            <div class ="row">
+              <label for="exampleInputEmail1" class="items">Vinculo com o cliente<span class="text-danger">
+                *
+              </span></label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+          </div>
+          <div class=" col-3">
+            <div class ="row">
+              <label for="exampleInputEmail1">Nascimento<span class="text-danger">
+                *
+              </span></label>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+              </div>
+            </div>
+          </div>
+          <div class= "col-4">
+            <div class=" row">
+              <label for="exampleInputEmail1">Sexo<span class="text-danger">
+              *
+              </span></label>
+              <div class="col-md-3 ml-5">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
+                  Feminino
+              </div>
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                Masculino
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </form>
+
+      <form>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado Civil<span class="text-danger">
+              *
+            </span></label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>Solteiro(a)</option>
+              <option>Casado(a)</option>
+              <option>Viúvo(a)</option>
+              </select>
+          </div>
+          <form class="container p-5 col-10 offset-1">
+            <div class="row d-flex align-items-center">
+              <div class="col-5 d-flex justify-content-end">
+                Filhos<span class="text-danger">
+                  *
+                </span>
+              </div>
+              <div class="col-7">
+                <div class="input-group mb-2 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" />
+                        <label class="form-check-label">Não</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" />
+                        <label class="form-check-label">Sim</label>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Quantos?"/>
+                </div>
+              </div>
+            </div>    
+        </div>
+      </form>
+      <form>
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="inputEstado" class="items">Escolaridade<span class="text-danger">
+                *
+              </span></label>
+              <select id="inputEstado" class="form-control">
+                <option selected>Escolher...</option>
+                <option>Ensino Fundamental Incompleto</option>
+                <option>Ensino Fundamental Completo</option>
+                <option>Ensino Médio Incompleto</option>
+                <option>Ensino Médio Completo</option>
+                <option>Ensino Superior Incompleto</option>
+                <option>Ensino Superior Completo</option>
+              </select> 
+            </div>
+          </div>
+        </div>
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+
+          
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="exampleInputEmail1">Profissão<span class="text-danger">
+            *
+          </span></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+      </form>
+      <form>
+        <div class="input-form-group row formulario">
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="exampleInputEmail1" class="items">Celular<span class="text-danger">
+                *
+              </span></label>
+              <span class="input-group-text icon " id="inputGroupPrepend">
+                <i class="material-icons">&#xe551;</i>
+              </span>
+              <div class="form-check form-check-inline col-5">
+                <input type="text" class="form-control" placeholder="XX-XXXXX-XXXX">
+              </div>  
+            </div>
+          </div>
+          <div class="col-4 mb-2">
+            <div class="row">
+              <label for="exampleInputEmail1" id="telefone">Telefone<span class="text-danger">
+                *
+              </span></label>
+              <span class="input-group-text icon " id="inputGroupPrepend">
+                <i class="material-icons">&#xe551;</i>
+              </span>
+              <div class="form-check form-check-inline col-5">
+                <input type="text" class="form-control" placeholder="XX-XXXXX-XXXX">
+              </div>  
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+    </form>
+    <form>
+      <div class="input-form-group row formulario">
+        <div class="col-4 mb-2">
+          <div class="row">
+            <label for="exampleInputEmail1" class="items">Email<span class="text-danger">
+              *
+            </span></label>
+            <span class="input-group-text icon " id="inputGroupPrepend">
+              <i class="material-icons">&#xe158;</i>
+            </span>
+            <div class="form-check form-check-inline col-5">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+            </div>  
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success">Enviar</button>
+      <button type="button" class="btn btn-danger">Cancelar</button>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
